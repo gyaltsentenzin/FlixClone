@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let task = session.dataTask(with: request) { (data, response, error) in
              // This will run when the network request returns
              if let error = error {
-                     //print(error.localizedDescription)
+                     print(error.localizedDescription)
              } else if let data = data {
                     let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
 
